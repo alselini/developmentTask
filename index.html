@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Development Task</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" sizes="16x16 32x32 48x48">
+  </head>
+  <body>
+    <div class="hero-image">
+      <div class="hero-logo-container">
+        <img class="hero-logo" src="img/heroLogo.png" />
+      </div>
+
+      <div class="hero-text-container">
+        <h1 class="hero-heading">COMING SOON</h1>
+      </div>
+
+      <div class="arrow">
+        <ion-icon name="chevron-down-circle"></ion-icon>
+      </div>
+    </div>
+    <div class="main">
+      <div class="about-us">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore at
+          iusto suscipit asperiores deserunt modi, voluptatibus, perferendis
+          ducimus laboriosam ipsam quaerat facere quidem ea, minima iste
+          corporis exercitationem! Voluptate, aperiam.
+        </p>
+      </div>
+
+      <hr class="separator" />
+
+      <div class="contact-info">
+        <div class="contact-item">
+          <ion-icon name="call-outline"></ion-icon>
+          <span>0121 468 3264</span>
+        </div>
+        <div class="contact-item">
+          <ion-icon name="mail-outline"></ion-icon>
+          <span>hello@sevenliving.com</span>
+        </div>
+        <div class="contact-item">
+          <ion-icon name="location-outline"></ion-icon>
+          <span>97 Park Lane, London, W1K 7TG</span>
+        </div>
+      </div>
+    </div>
+
+   <div class="form-container">
+      <form action="/submit-form" method="POST" id="contact-form">
+        <div class="form-title">
+          <h2>Send us a Message</h2>
+        </div>
+    
+        <div class="form-row1">
+          <input type="text" class="form-input" id="name" placeholder="Name" required />
+          <input type="email" class="form-input" id="email" placeholder="Email address" required />
+        </div>
+        <div class="form-row2">
+          <textarea class="form-message" id="message" placeholder="Your Message" required></textarea>
+        </div>
+    
+        <div class="form-row3">
+          <input type="submit"></input>
+        </div>
+        <div class="alert">
+          <div id="loader"></div>
+          <div id="error-message"></div>
+          <div id="sent-message">Your message has been sent. Thank you!</div>
+        </div>
+      </form>
+      </div>
+
+    
+
+    <footer class="footer">
+      <div class="copyright">&copy; SevenLiving 2020</div>
+      <div class="social-icons">
+        <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href=""> <ion-icon name="logo-twitter"></ion-icon></a>
+        <a href=""> <ion-icon name="logo-instagram"></ion-icon></a>
+      </div>
+    </footer>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/script.js"></script>    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  ></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("78sIDfMkiWEoc4jRa");
+    })();
+  </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-image {
+  position: relative;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.06),
+      rgba(0, 0, 0, 0.097)
+    ),
+    url("../img/SEVEN CAPITAL_ONE THAMES VALLEY_V05 REAR_Low_Res.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 45vw;
+  display: grid;
+  grid-template-columns: 1fr 6fr 6fr;
+  grid-template-rows: 1fr 2fr 2fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". logo ."
+    ". text ."
+    ". arrow .";
+}
+
+
+.hero-logo {
+  margin-top: 20px;
+  width: 9rem;
+}
+
+.hero-logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: center;
+  grid-area: logo;
+}
+
+.hero-text-container {
+  grid-area: text;
+  font-family: "Merriweather Sans", sans-serif;
+  letter-spacing: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: center;
+  color: rgb(225, 225, 225);
+}
+
+.hero-heading {
+  font-size: 3vw;
+  font-family: "montserrat", serif;
+  font-weight: 600;
+  letter-spacing: 0rem;
+  color: white;
+}
+
+.arrow ion-icon {
+  cursor: pointer;
+  color: rgba(193, 193, 193, 0.826);
+  font-size: 50px;}
+
+  .arrow {
+grid-area: arrow;
+display: flex;
+justify-content: end;
+align-items: end;
+margin-bottom: 20px;
+
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 5rem 9rem;
+}
+
+.about-us {
+  display: grid;
+  text-align: center;
+  font-family: "montserrat", serif;
+  font-weight: 400;
+  line-height: 22px;
+  gap: 3rem;
+  margin: 0rem 3rem;
+  font-size: 1rem;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  font-family: "montserrat", serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-info ion-icon {
+  font-size: 24px;
+}
+
+.separator {
+  border: 0;
+  border-top: 1px solid rgba(180, 180, 180, 0.67);
+  width: 100px;
+  margin: 10px auto;
+}
+
+.form-container {
+  background-color: #fbf8f5;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-title {
+  font-family: "montserrat", serif;
+  font-weight: 600;
+  text-align: left;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+#contact-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.form-row1 {
+  font-family: "montserrat", serif;
+  font-weight: 400;
+  display: flex;
+  gap: 2rem;
+}
+.form-row2 {
+  display: flex;
+}
+.form-row3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-row3 input {
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: 1px solid rgb(70, 70, 70);
+  border-radius: 10px;
+  cursor: pointer;
+  color: black;
+}
+.form-row3 input:hover { 
+  background-color: rgb(46, 46, 46);
+  color: white;
+  transition: 0.2s ease-in;
+
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(70, 70, 70);
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.form-message {
+  width: 100%;
+  padding: 10px 10px 50px 10px;
+  border: 1px solid rgb(70, 70, 70);
+  border-radius: 5px;
+  resize: vertical;
+  background-color: transparent;
+}
+
+
+
+
+
+
+.alert {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#loader {
+  display: none;
+position: absolute;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #999999;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+#sent-message {
+  display: none;
+position: absolute;
+  font-family: "montserrat", serif;
+  font-weight: 400;
+}
+
+#error-message {
+display: none;
+  font-family: "montserrat", serif;
+  font-weight: 400;
+  color: red;
+}
+
+
+.footer {
+  background-color: #fbf8f5;
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 0 0 0;
+  padding: 3rem 4rem 2rem 6rem;
+  align-items: center;
+  font-family: "montserrat", serif;
+  font-weight: 400;
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+.copyright {
+  display: flex;
+  align-items: end;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer a {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1050px) {
+  .hero-image {
+    min-height: 40rem;
+    grid-template-columns: 2fr 6fr 6fr;
+    grid-template-rows: 1fr 2fr 2fr;
+  }
+
+  .hero-heading {
+    font-size: 5vw;
+  }
+
+  .main {
+    gap: 2rem;
+    margin: 3rem 5rem;
+  }
+
+  .about-us {
+    font-size: 0.9rem;
+  }
+  .contact-info {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hero-image {
+    background-position: 30%;    
+    grid-template-columns: 2fr 6fr 6fr;
+    grid-template-rows: 1fr 2fr 3fr;
+  }
+
+  .arrow {
+    margin-right: 50px;
+  }
+
+  #contact-form {
+    width: 70%;
+  }
+
+  .form-row1 {
+    gap: 0.5rem;
+  }
+
+  .hero-heading {
+    font-size: 2rem;
+    width: max-content;
+  }
+
+  .hero-logo {
+    width: 8rem;
+  }
+
+  .main {
+    margin: 5rem 0rem;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .footer {
+    padding: 3rem 2rem 2rem 2rem;
+  }
+}
